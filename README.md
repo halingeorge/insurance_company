@@ -1,1 +1,1 @@
-# insurance_company
+# Страховая компания
