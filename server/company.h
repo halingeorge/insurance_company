@@ -3,6 +3,7 @@
 
 #include "insurance.h"
 
+#include <map>
 #include <vector>
 
 class Company {
@@ -15,10 +16,11 @@ class Company {
 
     std::vector<Insurance> GetOutdatedInsurances() const;
 
-    void AddInsurance(Insurance insurance);
+    void UpdateInsurances(std::vector<Insurance> insurances);
 
  private:
     std::vector<Insurance> insurances_;
+    std::map<Insurance, std::uint32_t> sold_insurances_;
     double money_;
 };
 

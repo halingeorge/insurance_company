@@ -24,8 +24,7 @@ class Insurance {
     Insurance(Type type, PaymentFrequency payment_frequency, std::uint32_t price, std::uint32_t months_duration,
         std::uint32_t demand, std::uint32_t min_insurance_money_amount, std::uint32_t max_insurance_money_amount);
 
-    std::uint32_t GetDemand() const;
-    void SetDemand(std::uint32_t demand);
+    std::uint32_t GenerateDemand() const;
 
  private:
     Type type_;
