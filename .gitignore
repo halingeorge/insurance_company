@@ -38,3 +38,7 @@ build
 cmake-build-debug
 cmake-build-release
 .idea
+
+# Qt
+CMakeLists.txt.user
+insurance_company_ru_RU.ts
