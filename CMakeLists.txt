@@ -28,35 +28,34 @@ find_package(Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 
 set(Qt5_DIR /Users/halin-george/Qt1/5.14.1/wasm_32/lib/cmake/Qt5)
 
-set(TS_FILES insurance_company_ru_RU.ts)
-
-if(ANDROID)
-  add_library(insurance_company SHARED
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
-    ${TS_FILES}
-  )
-else()
-  add_executable(insurance_company
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
-    company.h
-    game.h
-    game.cpp
-    insurance.h
-    options.h
-    options.cpp
-    error.h
-    base.h
-    parse.h
-    parse.cpp
-    ${TS_FILES}
-  )
-endif()
+if (ANDROID)
+    add_library(insurance_company SHARED
+            main.cpp
+            mainwindow.cpp
+            mainwindow.h
+            mainwindow.ui
+            ${TS_FILES}
+            )
+else ()
+    add_executable(insurance_company
+            main.cpp
+            mainwindow.cpp
+            mainwindow.h
+            mainwindow.ui
+            company.h
+            company.cpp
+            game.h
+            game.cpp
+            insurance.h
+            insurance.cpp
+            options.h
+            options.cpp
+            error.h
+            base.h
+            parse.h
+            parse.cpp
+            )
+endif ()
 
 target_link_libraries(insurance_company PRIVATE Qt5::Widgets)
 

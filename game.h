@@ -6,21 +6,26 @@
 
 class Game {
  public:
-    Game() = default;
+  Game() = default;
 
-    void PlayOneDay();
+  void Init(GameOptions options);
 
-    bool HasGameFinished() const;
+  bool PlayOneMonth();
 
-    bool HasCompanyWon() const;
+  bool HasCompanyLost() const;
 
-    bool HasCompanyLost() const;
+  bool HasGameFinished() const;
 
-    void SetOptions(GameOptions options);
+  Company& GetCompany();
+
+  size_t GetPlayedMonth() const {
+    return played_months_;
+  }
 
  private:
-    GameOptions options_;
-    Company company_;
+  GameOptions options_;
+  Company company_;
+  size_t played_months_ = 0;
 };
 
 #endif //INSURANCE_COMPANY__GAME_H_

@@ -1,39 +1,64 @@
 #ifndef INSURANCE_COMPANY__INSURANCE_H_
 #define INSURANCE_COMPANY__INSURANCE_H_
 
+#include "base.h"
+#include "error.h"
+
 #include <cstdint>
+#include <vector>
+#include <string_view>
 
 class Insurance {
  public:
-    enum class Type {
-        House,
-        Car,
-        Health,
+  enum class Type {
+    House,
+    Car,
+    Health,
 
-        Size
-    };
+    Size
+  };
 
-    enum class PaymentFrequency {
-        Month,
-        Quarter,
-        Year,
+  static ErrorOr<Insurance> Init(Type type,
+                                 std::string_view price,
+                                 std::string_view duration,
+                                 std::string_view min_insurance_money_amount,
+                                 std::string_view max_insurance_money_amount,
+                                 std::string_view payment_frequency);
 
-        Size
-    };
+  double GetDemand() const;
 
-    Insurance(Type type, PaymentFrequency payment_frequency, std::uint32_t price, std::uint32_t months_duration,
-        std::uint32_t demand, std::uint32_t min_insurance_money_amount, std::uint32_t max_insurance_money_amount);
+  Type GetType() const;
 
-    std::uint32_t GenerateDemand() const;
+  bool HasExpired() const;
+
+  double GetPricePerMonth() const {
+    return price_;
+  }
+
+  double GetMinInsuranceMoneyAmount() const {
+    return min_insurance_money_amount_;
+  }
+
+  double GetMaxInsuranceMoneyAmount() const {
+    return max_insurance_money_amount_;
+  }
+
+  void IncrementLiveTime() {
+    live_time_ += 1;
+  }
+
+ public:
+  static constexpr size_t ParameterCount = 5;
 
  private:
-    Type type_;
-    PaymentFrequency payment_frequency_;
-    double price_per_month_;
-    std::uint32_t months_duration_;
-    std::uint32_t demand_;
-    std::uint32_t min_insurance_money_amount_;
-    std::uint32_t max_insurance_money_amount_;
+  Type type_;
+  double price_;
+  std::uint32_t period_price_;
+  std::uint32_t months_duration_;
+  std::uint32_t min_insurance_money_amount_;
+  std::uint32_t max_insurance_money_amount_;
+  std::uint32_t payment_frequency_;
+  std::uint32_t live_time_ = 0;
 };
 
 #endif //INSURANCE_COMPANY__INSURANCE_H_
