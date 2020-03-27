@@ -120,8 +120,7 @@ bool MainWindow::on_play_month_clicked() {
   auto double_to_string = [&](double value) {
     auto str = std::to_string(static_cast<int>(value * 100) / 100.0);
     DEBUG("double_to_string: " << str);
-    str.substr(0, str.size() - 4);
-    return str;
+    return str.substr(0, str.size() - 4);
   };
 
   DEBUG("size: " << game_.GetCompany().GetSoldInsurances().size());
