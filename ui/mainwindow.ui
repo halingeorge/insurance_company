@@ -1,834 +1,834 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>800</width>
-    <height>600</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="play_month">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>370</y>
-      <width>141</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Новый месяц</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="start_game">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>330</y>
-      <width>141</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Новая игра</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>140</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Длительность</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>130</y>
-      <width>61</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>140</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Стоимость</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>140</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Максимум</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>140</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Минимум</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>170</y>
-      <width>61</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Жилище</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>200</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Автомобиль</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>230</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Здоровье</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="house_cost_input">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>170</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="house_duration_input">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>170</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="house_min_input">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>170</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="house_max_input">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>170</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Стартовый капитал</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>30</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Максимальное</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="customer_input">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>80</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>40</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>количество</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>50</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>покупателей</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="fund_input">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>80</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>30</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Максимальное</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="refund_input">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>80</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>40</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>количество</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>50</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>возмещений</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="car_max_input">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>200</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="car_min_input">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>200</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="car_cost_input">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>200</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="car_duration_input">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>200</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="health_max_input">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>230</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="health_cost_input">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>230</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="health_duration_input">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>230</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="health_min_input">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>230</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_17">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>350</y>
-      <width>61</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Жилище</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>390</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Автомобиль</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_19">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>430</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Здоровье</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="current_fund_output">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>350</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>320</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Текущий капитал</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_21">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>40</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Налог</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="tax_input">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>80</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_24">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>130</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Регулярность</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="game_month_input">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>80</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_25">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>40</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Игровые</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_26">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>50</y>
-      <width>141</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>месяцы</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play_until_end">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>410</y>
-      <width>141</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Играть до конца</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="current_month_output">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>430</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_27">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>400</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Текущий месяц</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>279</y>
-      <width>431</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Суммарная статистика</string>
-    </property>
-    <widget class="QLabel" name="label_28">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>40</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Инциденты</string>
-     </property>
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QPushButton" name="play_month">
+                <property name="geometry">
+                    <rect>
+                        <x>640</x>
+                        <y>370</y>
+                        <width>141</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Новый месяц</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="start_game">
+                <property name="geometry">
+                    <rect>
+                        <x>640</x>
+                        <y>330</y>
+                        <width>141</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Новая игра</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label">
+                <property name="geometry">
+                    <rect>
+                        <x>210</x>
+                        <y>140</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Длительность</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                    <rect>
+                        <x>370</x>
+                        <y>130</y>
+                        <width>61</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>140</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Стоимость</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                    <rect>
+                        <x>410</x>
+                        <y>140</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Максимум</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+                <property name="geometry">
+                    <rect>
+                        <x>310</x>
+                        <y>140</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Минимум</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>170</y>
+                        <width>61</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Жилище</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>200</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Автомобиль</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_9">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Здоровье</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="house_cost_input">
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>170</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="house_duration_input">
+                <property name="geometry">
+                    <rect>
+                        <x>210</x>
+                        <y>170</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="house_min_input">
+                <property name="geometry">
+                    <rect>
+                        <x>310</x>
+                        <y>170</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="house_max_input">
+                <property name="geometry">
+                    <rect>
+                        <x>410</x>
+                        <y>170</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_10">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>40</y>
+                        <width>141</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Стартовый капитал</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>30</y>
+                        <width>171</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Максимальное</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="customer_input">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>80</y>
+                        <width>121</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>40</y>
+                        <width>171</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>количество</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                    <rect>
+                        <x>200</x>
+                        <y>50</y>
+                        <width>121</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>покупателей</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="fund_input">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>80</y>
+                        <width>121</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                    <rect>
+                        <x>340</x>
+                        <y>30</y>
+                        <width>171</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Максимальное</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="refund_input">
+                <property name="geometry">
+                    <rect>
+                        <x>340</x>
+                        <y>80</y>
+                        <width>121</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                    <rect>
+                        <x>340</x>
+                        <y>40</y>
+                        <width>171</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>количество</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                    <rect>
+                        <x>340</x>
+                        <y>50</y>
+                        <width>171</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>возмещений</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="car_max_input">
+                <property name="geometry">
+                    <rect>
+                        <x>410</x>
+                        <y>200</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="car_min_input">
+                <property name="geometry">
+                    <rect>
+                        <x>310</x>
+                        <y>200</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="car_cost_input">
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>200</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="car_duration_input">
+                <property name="geometry">
+                    <rect>
+                        <x>210</x>
+                        <y>200</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="health_max_input">
+                <property name="geometry">
+                    <rect>
+                        <x>410</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="health_cost_input">
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="health_duration_input">
+                <property name="geometry">
+                    <rect>
+                        <x>210</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="health_min_input">
+                <property name="geometry">
+                    <rect>
+                        <x>310</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>350</y>
+                        <width>61</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Жилище</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>390</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Автомобиль</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>430</y>
+                        <width>91</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Здоровье</string>
+                </property>
+            </widget>
+            <widget class="QTextBrowser" name="current_fund_output">
+                <property name="geometry">
+                    <rect>
+                        <x>470</x>
+                        <y>350</y>
+                        <width>141</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                    <rect>
+                        <x>470</x>
+                        <y>320</y>
+                        <width>111</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Текущий капитал</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_21">
+                <property name="geometry">
+                    <rect>
+                        <x>480</x>
+                        <y>40</y>
+                        <width>141</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Налог</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="tax_input">
+                <property name="geometry">
+                    <rect>
+                        <x>480</x>
+                        <y>80</y>
+                        <width>121</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_24">
+                <property name="geometry">
+                    <rect>
+                        <x>510</x>
+                        <y>130</y>
+                        <width>91</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Регулярность</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="game_month_input">
+                <property name="geometry">
+                    <rect>
+                        <x>620</x>
+                        <y>80</y>
+                        <width>121</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_25">
+                <property name="geometry">
+                    <rect>
+                        <x>620</x>
+                        <y>40</y>
+                        <width>141</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Игровые</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_26">
+                <property name="geometry">
+                    <rect>
+                        <x>620</x>
+                        <y>50</y>
+                        <width>141</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>месяцы</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="play_until_end">
+                <property name="geometry">
+                    <rect>
+                        <x>640</x>
+                        <y>410</y>
+                        <width>141</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Играть до конца</string>
+                </property>
+            </widget>
+            <widget class="QTextBrowser" name="current_month_output">
+                <property name="geometry">
+                    <rect>
+                        <x>470</x>
+                        <y>430</y>
+                        <width>141</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_27">
+                <property name="geometry">
+                    <rect>
+                        <x>470</x>
+                        <y>400</y>
+                        <width>111</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Текущий месяц</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox">
+                <property name="geometry">
+                    <rect>
+                        <x>19</x>
+                        <y>279</y>
+                        <width>431</width>
+                        <height>211</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Суммарная статистика</string>
+                </property>
+                <widget class="QLabel" name="label_28">
+                    <property name="geometry">
+                        <rect>
+                            <x>200</x>
+                            <y>40</y>
+                            <width>91</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Инциденты</string>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="house_sold_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>70</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="house_incidents_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>200</x>
+                            <y>70</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="house_income_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>300</x>
+                            <y>70</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_22">
+                    <property name="geometry">
+                        <rect>
+                            <x>300</x>
+                            <y>40</y>
+                            <width>91</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Прибыль</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_23">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>40</y>
+                            <width>91</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Продано</string>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="car_income_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>300</x>
+                            <y>110</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="car_incidents_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>200</x>
+                            <y>110</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="car_sold_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>110</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="health_incidents_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>200</x>
+                            <y>150</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="health_sold_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>150</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextBrowser" name="health_income_output">
+                    <property name="geometry">
+                        <rect>
+                            <x>300</x>
+                            <y>150</y>
+                            <width>91</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_2">
+                <property name="geometry">
+                    <rect>
+                        <x>459</x>
+                        <y>279</y>
+                        <width>161</width>
+                        <height>211</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Итог</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_3">
+                <property name="geometry">
+                    <rect>
+                        <x>19</x>
+                        <y>19</y>
+                        <width>751</width>
+                        <height>91</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Стартовые параметры</string>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_4">
+                <property name="geometry">
+                    <rect>
+                        <x>19</x>
+                        <y>120</y>
+                        <width>601</width>
+                        <height>141</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>Страховки</string>
+                </property>
+                <widget class="QTextEdit" name="house_payment_frequency_input">
+                    <property name="geometry">
+                        <rect>
+                            <x>490</x>
+                            <y>50</y>
+                            <width>91</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="car_payment_frequency_input">
+                    <property name="geometry">
+                        <rect>
+                            <x>490</x>
+                            <y>80</y>
+                            <width>91</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="health_payment_frequency_input">
+                    <property name="geometry">
+                        <rect>
+                            <x>490</x>
+                            <y>110</y>
+                            <width>91</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+            <zorder>groupBox_3</zorder>
+            <zorder>groupBox_2</zorder>
+            <zorder>groupBox</zorder>
+            <zorder>groupBox_4</zorder>
+            <zorder>play_month</zorder>
+            <zorder>start_game</zorder>
+            <zorder>label</zorder>
+            <zorder>label_3</zorder>
+            <zorder>label_2</zorder>
+            <zorder>label_4</zorder>
+            <zorder>label_5</zorder>
+            <zorder>label_7</zorder>
+            <zorder>label_8</zorder>
+            <zorder>label_9</zorder>
+            <zorder>house_cost_input</zorder>
+            <zorder>house_duration_input</zorder>
+            <zorder>house_min_input</zorder>
+            <zorder>house_max_input</zorder>
+            <zorder>label_10</zorder>
+            <zorder>label_11</zorder>
+            <zorder>customer_input</zorder>
+            <zorder>label_12</zorder>
+            <zorder>label_13</zorder>
+            <zorder>fund_input</zorder>
+            <zorder>label_14</zorder>
+            <zorder>refund_input</zorder>
+            <zorder>label_15</zorder>
+            <zorder>label_16</zorder>
+            <zorder>car_max_input</zorder>
+            <zorder>car_min_input</zorder>
+            <zorder>car_cost_input</zorder>
+            <zorder>car_duration_input</zorder>
+            <zorder>health_max_input</zorder>
+            <zorder>health_cost_input</zorder>
+            <zorder>health_duration_input</zorder>
+            <zorder>health_min_input</zorder>
+            <zorder>label_17</zorder>
+            <zorder>label_18</zorder>
+            <zorder>label_19</zorder>
+            <zorder>current_fund_output</zorder>
+            <zorder>label_6</zorder>
+            <zorder>label_21</zorder>
+            <zorder>tax_input</zorder>
+            <zorder>label_24</zorder>
+            <zorder>game_month_input</zorder>
+            <zorder>label_25</zorder>
+            <zorder>label_26</zorder>
+            <zorder>play_until_end</zorder>
+            <zorder>current_month_output</zorder>
+            <zorder>label_27</zorder>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>22</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
     </widget>
-    <widget class="QTextBrowser" name="house_sold_output">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>70</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="house_incidents_output">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>70</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="house_income_output">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>70</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_22">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>40</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Прибыль</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_23">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>40</y>
-       <width>91</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Продано</string>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="car_income_output">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>110</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="car_incidents_output">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>110</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="car_sold_output">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>110</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="health_incidents_output">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>150</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="health_sold_output">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>150</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="health_income_output">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>150</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>459</x>
-      <y>279</y>
-      <width>161</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Итог</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>19</y>
-      <width>751</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Стартовые параметры</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>120</y>
-      <width>601</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Страховки</string>
-    </property>
-    <widget class="QTextEdit" name="house_payment_frequency_input">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>50</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="car_payment_frequency_input">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>80</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="health_payment_frequency_input">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>110</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <zorder>groupBox_3</zorder>
-   <zorder>groupBox_2</zorder>
-   <zorder>groupBox</zorder>
-   <zorder>groupBox_4</zorder>
-   <zorder>play_month</zorder>
-   <zorder>start_game</zorder>
-   <zorder>label</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
-   <zorder>label_9</zorder>
-   <zorder>house_cost_input</zorder>
-   <zorder>house_duration_input</zorder>
-   <zorder>house_min_input</zorder>
-   <zorder>house_max_input</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
-   <zorder>customer_input</zorder>
-   <zorder>label_12</zorder>
-   <zorder>label_13</zorder>
-   <zorder>fund_input</zorder>
-   <zorder>label_14</zorder>
-   <zorder>refund_input</zorder>
-   <zorder>label_15</zorder>
-   <zorder>label_16</zorder>
-   <zorder>car_max_input</zorder>
-   <zorder>car_min_input</zorder>
-   <zorder>car_cost_input</zorder>
-   <zorder>car_duration_input</zorder>
-   <zorder>health_max_input</zorder>
-   <zorder>health_cost_input</zorder>
-   <zorder>health_duration_input</zorder>
-   <zorder>health_min_input</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_18</zorder>
-   <zorder>label_19</zorder>
-   <zorder>current_fund_output</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_21</zorder>
-   <zorder>tax_input</zorder>
-   <zorder>label_24</zorder>
-   <zorder>game_month_input</zorder>
-   <zorder>label_25</zorder>
-   <zorder>label_26</zorder>
-   <zorder>play_until_end</zorder>
-   <zorder>current_month_output</zorder>
-   <zorder>label_27</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
- </widget>
- <resources/>
- <connections/>
+    <resources/>
+    <connections/>
 </ui>

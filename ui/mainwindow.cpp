@@ -125,7 +125,7 @@ bool MainWindow::on_play_month_clicked() {
   };
 
   DEBUG("size: " << game_.GetCompany().GetSoldInsurances().size());
-  for (auto [key, value] : game_.GetCompany().GetSoldInsurances()) {
+  for (auto[key, value] : game_.GetCompany().GetSoldInsurances()) {
     DEBUG("key: " << static_cast<int>(key));
     DEBUG("value: " << value);
   }
