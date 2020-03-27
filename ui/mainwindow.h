@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "game.h"
+#include <server/game.h>
 
 #include <QMainWindow>
 #include <QTextEdit>
@@ -34,4 +34,7 @@ class MainWindow : public QMainWindow {
   std::vector<QTextEdit*> insurance_inputs_;
   std::vector<size_t> indexes_to_update_;
 };
+
+int run_main_window(int argc, char* argv[]);
+
 #endif // MAINWINDOW_H

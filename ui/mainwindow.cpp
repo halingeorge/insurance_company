@@ -2,9 +2,10 @@
 #include "./ui_mainwindow.h"
 
 #include <QMessageBox>
+#include <QApplication>
 
-#include "base.h"
-#include "options.h"
+#include <server/base.h>
+#include <server/options.h>
 
 #include <iostream>
 #include <unistd.h>
@@ -256,4 +257,11 @@ void MainWindow::on_freeze() {
 
   freeze(ui->current_fund_output);
   freeze(ui->current_month_output);
+}
+
+int run_main_window(int argc, char* argv[]) {
+  QApplication a(argc, argv);
+  MainWindow w;
+  w.show();
+  return a.exec();
 }
